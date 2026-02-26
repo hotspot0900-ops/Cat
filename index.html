@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewportMeta">
     <title>Hotspot Mobile | Samsung Specialist | Mooi Rivier Mall</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css ">
     <style>
         :root {
             --primary-blue: #003366;
@@ -512,7 +512,7 @@
     </select>
 </div>
 
-<a href="https://wa.me/27845935657" class="floating-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/27845935657 " class="floating-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 <button onclick="scrollToTop()" id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
 <div class="promo-banner">
@@ -525,7 +525,7 @@
     
     <div class="search-container">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchInput" placeholder="Search Model (e.g. S25, A56, A06...)" onkeyup="filterPhones()">
+        <input type="text" id="searchInput" placeholder="Search Model (e.g. S26, Z Fold, Z Flip...)" onkeyup="filterPhones()">
     </div>
 
     <div class="header-content-wrapper">
@@ -569,29 +569,55 @@
 <script>
     const waNumber = "27845935657";
     const phones = [
-        { name: "Galaxy S25 Ultra", display: "6.9\" QHD+ AMOLED 120Hz", cam: "200MP Quad", bat: "5000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Titanium Silver, Black", img: "https://images.samsung.com/is/image/samsung/p6pim/za/2501/gallery/za-galaxy-s25-s938-sm-s938bzbiafa-544712281" },
-        { name: "Galaxy S25 Plus", display: "6.7\" QHD+ AMOLED", cam: "50MP Triple", bat: "4900mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Navy, Silver", img: "https://cellucity.co.za/wp-content/uploads/2025/02/Samsung-Galaxy-S25-Plus-Navy.jpg" },
-        { name: "Galaxy S25", display: "6.2\" FHD+ AMOLED", cam: "50MP Triple", bat: "4000mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Silver, Mint", img: "https://cellucity.co.za/wp-content/uploads/2025/02/Samsung-Galaxy-S25-Silver.jpg" },
-        { name: "Galaxy S25 FE", display: "6.4\" FHD+ AMOLED", cam: "50MP Triple", bat: "4500mAh", store: "128GB", sim: "Dual Nano", net: "5G", colors: "White, Graphite", img: "https://cellucity.co.za/wp-content/uploads/2025/09/Samsung-Galaxy-S25-FE-White-300x300.jpg" },
-        { name: "Galaxy S25 EDGE", display: "6.7\" Edge Display", cam: "50MP Triple", bat: "4700mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpo2iozwqY5G0gw7Osifaf4G9-s-THwYdI6g&s" },
-        { name: "Galaxy S24 Ultra", display: "6.8\" QHD+ AMOLED", cam: "200MP Quad", bat: "5000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Titanium Gray", img: "https://justcelit.co.za/wp-content/uploads/2024/08/s24-Ultra-500-x-500.png" },
-        { name: "Galaxy S24 Plus", display: "6.7\" AMOLED", cam: "50MP Triple", bat: "4900mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://http2.mlstatic.com/D_NQ_NP_735140-MLA76489603841_052024-O.webp" },
-        { name: "Galaxy S24", display: "6.2\" AMOLED", cam: "50MP Triple", bat: "4000mAh", store: "128GB", sim: "Nano + eSIM", net: "5G", colors: "Gray", img: "https://bsimg.nl/images/samsung-galaxy-s24-256gb-s921-zilver-eu_9.png/rixvd9fiwXeHhg5-wOZHH3Q-YSk%3D/fit-in/0x0/filters%3Aupscale%28%29" },
-        { name: "Galaxy S23 Ultra", display: "6.8\" AMOLED", cam: "200MP Quad", bat: "5000mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Green", img: "https://cellularinc.co.za/wp-content/uploads/2024/01/Samsung-Galaxy-S23-Ultra-600x600.png" },
-        { name: "Galaxy S23 Plus", display: "6.6\" AMOLED", cam: "50MP Triple", bat: "4700mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Lavender", img: "https://epicdeals.co.za/wp-content/uploads/2025/03/samsung-galaxy-s23-plus-5g-512gb-dual-sim-green-cpo--300x300.png" },
-        { name: "Galaxy S23", display: "6.1\" AMOLED", cam: "50MP Triple", bat: "3900mAh", store: "128GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://i0.wp.com/supercells.co.za/wp-content/uploads/2024/05/s23.jpg?fit=800%2C800&ssl=1" },
-        { name: "Galaxy S22 Ultra", display: "6.8\" AMOLED", cam: "108MP Quad", bat: "5000mAh", store: "256GB", sim: "Dual SIM", net: "5G", colors: "Burgundy", img: "https://m.media-amazon.com/images/I/51AV0vHvi5L._AC_SY355_.jpg" },
-        { name: "Galaxy A56 5G", display: "6.7\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Black, Gray", img: "https://images.telkom.co.za/640/backend-files/Samsung_Galaxy_A56_Awesome_Black_slide.webp" },
-        { name: "Galaxy A36 5G", display: "6.6\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Black", img: "https://www.technomobi.co.za/media/catalog/product/cache/e2a07cde3e161746aa285b73c334c4ba/1/0/104075900_a2a7e74c30318427e09a67e29f8611d1.png" },
-        { name: "Galaxy A26 5G", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Mint", img: "https://images.telkom.co.za/640/backend-files/Samsung_Galaxy_A26_Awesome_Black_slide.webp" },
-        { name: "Galaxy A25", display: "6.5\" AMOLED 120Hz", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Yellow, Blue", img: "https://media.loot.co.za/images/x400/2399105281707179215.jpg" },
-        { name: "Galaxy A24", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "4G", colors: "Black", img: "https://m.media-amazon.com/images/I/71Qw85xhy+L._AC_SY355_.jpg" },
-        { name: "Galaxy A16", display: "6.7\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Gray", img: "https://www.edgars.co.za/cdn/shop/files/104_5c135b14-fc79-4767-9516-31a3f246f0d3.jpg?v=1734073736&width=720" },
-        { name: "Galaxy A15", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "4G/5G", colors: "Blue", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HMBjVaJq5R6_V-liNiyJM2sAqvdZSWTCew&s" },
-        { name: "Galaxy A14", display: "6.6\" FHD+ LCD", cam: "50MP Triple", bat: "5000mAh", store: "64GB", sim: "Dual SIM", net: "4G", colors: "Silver", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrJKSSmqL-WUNcegIYKIwW9ZB24K3TaWrcQ&s" },
-        { name: "Galaxy A06", display: "6.7\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "64GB/128GB", sim: "Dual SIM", net: "4G", colors: "Gold, Black", img: "https://m.media-amazon.com/images/I/61asGlxdMOL._AC_SY355_.jpg" },
-        { name: "Galaxy A05", display: "6.7\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "64GB", sim: "Dual SIM", net: "4G", colors: "Silver", img: "https://m.media-amazon.com/images/I/616ImUvUjfL._AC_SY300_SX300_QL70_ML2_.jpg" },
-        { name: "Galaxy A04", display: "6.5\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "32GB/64GB", sim: "Dual SIM", net: "4G", colors: "Black", img: "https://img.global.news.samsung.com/za/wp-content/uploads/2023/01/SM-A045_Galaxy-A04_Black_Front-and-back-Decal.jpg" }
+        // ==================== S26 SERIES (TOP PRIORITY) ====================
+        { name: "Galaxy S26 Ultra", display: "6.9\" QHD+ AMOLED 120Hz", cam: "200MP Quad + AI", bat: "5500mAh", store: "256GB/512GB/1TB", sim: "Nano + eSIM", net: "5G", colors: "Titanium Black, Silver, Blue", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8cKoseKbF6jSwY1wfNiCWG_eXk8gc93JoA&s" },
+        { name: "Galaxy S26 Plus", display: "6.7\" QHD+ AMOLED 120Hz", cam: "50MP Triple + AI", bat: "5200mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Navy, Silver, Mint", img: "https://www.incredible.co.za/api/catalog/product/s/m/sm_s947_galaxys26plus_front_black_251128_ecommerce_c243.png?width=700&height=700&store=incredibleconnection&image-type=image" },
+        { name: "Galaxy S26", display: "6.2\" FHD+ AMOLED 120Hz", cam: "50MP Triple + AI", bat: "4200mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Silver, Black, Pink", img: "https://www.incredible.co.za/api/catalog/product/s/m/sm_s942_galaxys26_front_cobaltviolet_251128_ecommerce_58e4.png?width=700&height=700&store=incredibleconnection&image-type=image" },
+        
+        // ==================== S25 SERIES ====================
+        { name: "Galaxy S25 Ultra", display: "6.9\" QHD+ AMOLED 120Hz", cam: "200MP Quad", bat: "5000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Titanium Silver, Black", img: "https://images.samsung.com/is/image/samsung/p6pim/za/2501/gallery/za-galaxy-s25-s938-sm-s938bzbiafa-544712281 " },
+        { name: "Galaxy S25 Plus", display: "6.7\" QHD+ AMOLED", cam: "50MP Triple", bat: "4900mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Navy, Silver", img: "https://cellucity.co.za/wp-content/uploads/2025/02/Samsung-Galaxy-S25-Plus-Navy.jpg " },
+        { name: "Galaxy S25", display: "6.2\" FHD+ AMOLED", cam: "50MP Triple", bat: "4000mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Silver, Mint", img: "https://cellucity.co.za/wp-content/uploads/2025/02/Samsung-Galaxy-S25-Silver.jpg " },
+        { name: "Galaxy S25 FE", display: "6.4\" FHD+ AMOLED", cam: "50MP Triple", bat: "4500mAh", store: "128GB", sim: "Dual Nano", net: "5G", colors: "White, Graphite", img: "https://cellucity.co.za/wp-content/uploads/2025/09/Samsung-Galaxy-S25-FE-White-300x300.jpg " },
+        { name: "Galaxy S25 EDGE", display: "6.7\" Edge Display", cam: "50MP Triple", bat: "4700mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpo2iozwqY5G0gw7Osifaf4G9-s-THwYdI6g&s " },
+        
+        // ==================== S24 SERIES ====================
+        { name: "Galaxy S24 Ultra", display: "6.8\" QHD+ AMOLED", cam: "200MP Quad", bat: "5000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Titanium Gray", img: "https://justcelit.co.za/wp-content/uploads/2024/08/s24-Ultra-500-x-500.png " },
+        { name: "Galaxy S24 Plus", display: "6.7\" AMOLED", cam: "50MP Triple", bat: "4900mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://http2.mlstatic.com/D_NQ_NP_735140-MLA76489603841_052024-O.webp " },
+        { name: "Galaxy S24", display: "6.2\" AMOLED", cam: "50MP Triple", bat: "4000mAh", store: "128GB", sim: "Nano + eSIM", net: "5G", colors: "Gray", img: "https://bsimg.nl/images/samsung-galaxy-s24-256gb-s921-zilver-eu_9.png/rixvd9fiwXeHhg5-wOZHH3Q-YSk%3D/fit-in/0x0/filters%3Aupscale%28%29 " },
+        
+        // ==================== S23 SERIES ====================
+        { name: "Galaxy S23 Ultra", display: "6.8\" AMOLED", cam: "200MP Quad", bat: "5000mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Green", img: "https://cellularinc.co.za/wp-content/uploads/2024/01/Samsung-Galaxy-S23-Ultra-600x600.png " },
+        { name: "Galaxy S23 Plus", display: "6.6\" AMOLED", cam: "50MP Triple", bat: "4700mAh", store: "256GB", sim: "Nano + eSIM", net: "5G", colors: "Lavender", img: "https://epicdeals.co.za/wp-content/uploads/2025/03/samsung-galaxy-s23-plus-5g-512gb-dual-sim-green-cpo--300x300.png " },
+        { name: "Galaxy S23", display: "6.1\" AMOLED", cam: "50MP Triple", bat: "3900mAh", store: "128GB", sim: "Nano + eSIM", net: "5G", colors: "Black", img: "https://i0.wp.com/supercells.co.za/wp-content/uploads/2024/05/s23.jpg?fit=800%2C800&ssl=1 " },
+        
+        // ==================== S22 SERIES ====================
+        { name: "Galaxy S22 Ultra", display: "6.8\" AMOLED", cam: "108MP Quad", bat: "5000mAh", store: "256GB", sim: "Dual SIM", net: "5G", colors: "Burgundy", img: "https://m.media-amazon.com/images/I/51AV0vHvi5L._AC_SY355_.jpg " },
+        
+        // ==================== A SERIES ====================
+        { name: "Galaxy A56 5G", display: "6.7\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Black, Gray", img: "https://images.telkom.co.za/640/backend-files/Samsung_Galaxy_A56_Awesome_Black_slide.webp " },
+        { name: "Galaxy A36 5G", display: "6.6\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Black", img: "https://www.technomobi.co.za/media/catalog/product/cache/e2a07cde3e161746aa285b73c334c4ba/1/0/104075900_a2a7e74c30318427e09a67e29f8611d1.png " },
+        { name: "Galaxy A26 5G", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Mint", img: "https://images.telkom.co.za/640/backend-files/Samsung_Galaxy_A26_Awesome_Black_slide.webp " },
+        { name: "Galaxy A25", display: "6.5\" AMOLED 120Hz", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Yellow, Blue", img: "https://media.loot.co.za/images/x400/2399105281707179215.jpg " },
+        { name: "Galaxy A24", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "4G", colors: "Black", img: "https://m.media-amazon.com/images/I/71Qw85xhy+L._AC_SY355_.jpg " },
+        { name: "Galaxy A16", display: "6.7\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "5G", colors: "Gray", img: "https://www.edgars.co.za/cdn/shop/files/104_5c135b14-fc79-4767-9516-31a3f246f0d3.jpg?v=1734073736&width=720 " },
+        { name: "Galaxy A15", display: "6.5\" Super AMOLED", cam: "50MP Triple", bat: "5000mAh", store: "128GB", sim: "Dual SIM", net: "4G/5G", colors: "Blue", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HMBjVaJq5R6_V-liNiyJM2sAqvdZSWTCew&s " },
+        { name: "Galaxy A14", display: "6.6\" FHD+ LCD", cam: "50MP Triple", bat: "5000mAh", store: "64GB", sim: "Dual SIM", net: "4G", colors: "Silver", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrJKSSmqL-WUNcegIYKIwW9ZB24K3TaWrcQ&s " },
+        { name: "Galaxy A06", display: "6.7\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "64GB/128GB", sim: "Dual SIM", net: "4G", colors: "Gold, Black", img: "https://m.media-amazon.com/images/I/61asGlxdMOL._AC_SY355_.jpg " },
+        { name: "Galaxy A05", display: "6.7\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "64GB", sim: "Dual SIM", net: "4G", colors: "Silver", img: "https://m.media-amazon.com/images/I/616ImUvUjfL._AC_SY300_SX300_QL70_ML2_.jpg " },
+        { name: "Galaxy A04", display: "6.5\" HD+ LCD", cam: "50MP Dual", bat: "5000mAh", store: "32GB/64GB", sim: "Dual SIM", net: "4G", colors: "Black", img: "https://img.global.news.samsung.com/za/wp-content/uploads/2023/01/SM-A045_Galaxy-A04_Black_Front-and-back-Decal.jpg " },
+        
+        // ==================== Z FOLD SERIES (LAST) ====================
+        { name: "Galaxy Z Fold 7", display: "7.6\" QXGA+ AMOLED 120Hz (Inner) + 6.2\" HD+ (Cover)", cam: "50MP Triple + Under Display", bat: "4400mAh", store: "256GB/512GB/1TB", sim: "Nano + eSIM", net: "5G", colors: "Phantom Black, Navy, Silver", img: "https://bsimg.nl/images/samsung-galaxy-z-fold-7-256gb-donkerblauw-eu_2.png/DIF1XIK_uxD4QcsFK70C5KGusHQ%3D/fit-in/257x400/filters%3Aformat%28png%29%3Aupscale%28%29" },
+        { name: "Galaxy Z Fold 6", display: "7.6\" QXGA+ AMOLED 120Hz (Inner) + 6.2\" HD+ (Cover)", cam: "50MP Triple", bat: "4400mAh", store: "256GB/512GB/1TB", sim: "Nano + eSIM", net: "5G", colors: "Navy, Silver, Pink", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRqMFK75E9qI2TzeWQsXwAVNgCIHViRNhkZqmMUjsUhg&s" },
+        { name: "Galaxy Z Fold 5", display: "7.6\" QXGA+ AMOLED 120Hz (Inner) + 6.2\" HD+ (Cover)", cam: "50MP Triple", bat: "4400mAh", store: "256GB/512GB/1TB", sim: "Nano + eSIM", net: "5G", colors: "Phantom Black, Cream, Icy Blue", img: "https://coolcart.co.za/cdn/shop/files/SM-Galaxy-Z-Fold-5-Qmart-5_dfe4cb9b-b0a0-4cdf-9ff7-baed77dd40da_1000x.jpg?v=1706122544" },
+        { name: "Galaxy Z Fold 4", display: "7.6\" QXGA+ AMOLED 120Hz (Inner) + 6.2\" HD+ (Cover)", cam: "50MP Triple", bat: "4400mAh", store: "256GB/512GB/1TB", sim: "Nano + eSIM", net: "5G", colors: "Graygreen, Phantom Black, Beige", img: "https://fonezone.me/cdn/shop/files/Untitled_3_e13e2379-9149-4c59-aadb-5f58de252921.jpg?v=1725289934" },
+        
+        // ==================== Z FLIP SERIES (LAST) ====================
+        { name: "Galaxy Z Flip 7", display: "6.7\" FHD+ AMOLED 120Hz (Inner) + 3.4\" (Cover)", cam: "50MP Dual + AI", bat: "4000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Graphite, Yellow, Mint, Blue", img: "https://images.samsung.com/is/image/samsung/p6pim/za/feature/166387872/za-feature-smartphones-548199587?$FB_TYPE_I_JPG$" },
+        { name: "Galaxy Z Flip 6", display: "6.7\" FHD+ AMOLED 120Hz (Inner) + 3.4\" (Cover)", cam: "50MP Dual", bat: "4000mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Silver, Yellow, Blue, Peach", img: "https://www.dateks.lv/images/pic/2400/2400/391/1771.jpg" },
+        { name: "Galaxy Z Flip 5", display: "6.7\" FHD+ AMOLED 120Hz (Inner) + 3.4\" (Cover)", cam: "12MP Dual", bat: "3700mAh", store: "256GB/512GB", sim: "Nano + eSIM", net: "5G", colors: "Graphite, Cream, Lavender, Mint", img: "https://cellucity.co.za/wp-content/uploads/2024/11/Samsung-Galaxy-Z-flip5-in-Black.webp" },
+        { name: "Galaxy Z Flip 4", display: "6.7\" FHD+ AMOLED 120Hz (Inner) + 1.9\" (Cover)", cam: "12MP Dual", bat: "3700mAh", store: "128GB/256GB", sim: "Nano + eSIM", net: "5G", colors: "Bora Purple, Graphite, Pink Gold, Blue", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-aP8zP3q7Fo3UcjLDEFL_Cq69Aox2-__ZzQ&s" }
     ];
 
     function renderPhones(list) {
@@ -606,7 +632,7 @@
                 <div class="condition-label">New</div>
                 <div class="network-badge ${badgeClass}">${p.net}</div>
                 <div class="img-container">
-                    <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/200x180?text=Samsung'">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/200x180?text=Samsung '">
                 </div>
                 <h3 style="margin-bottom:5px; transition: color 0.3s ease;">${p.name}</h3>
                 <div class="warranty-tag">2-Year Official Warranty</div>
@@ -631,7 +657,7 @@
             <div class="spec-item"><span class="spec-label">SIM Type</span><span class="spec-value">${p.sim}</span></div>
             <div class="spec-item"><span class="spec-label">Available Colors</span><span class="spec-value">${p.colors}</span></div>
         `;
-        document.getElementById('m-wa').href = `https://wa.me/${waNumber}?text=Hi Hotspot Mobile! I'm interested in the Brand New ${p.name} with 2-Year Warranty. Please let me know the price.`;
+        document.getElementById('m-wa').href = `https://wa.me/ ${waNumber}?text=Hi Hotspot Mobile! I'm interested in the Brand New ${p.name} with 2-Year Warranty. Please let me know the price.`;
         
         const modal = document.getElementById('detailsModal');
         modal.style.display = 'flex';
@@ -676,14 +702,14 @@
         const n = document.getElementById('custName').value;
         const d = document.getElementById('custDevice').value;
         if(!n || !d) return alert("Please fill details.");
-        window.open(`https://wa.me/${waNumber}?text=Hi, I am ${n}. Inquiry for ${d}.`, '_blank');
+        window.open(`https://wa.me/ ${waNumber}?text=Hi, I am ${n}. Inquiry for ${d}.`, '_blank');
     }
 
     function sendRepairRequest() {
         const m = document.getElementById('repairModel').value;
         const f = document.getElementById('repairFault').value;
         if(!m || !f) return alert("Fill repair details");
-        window.open(`https://wa.me/${waNumber}?text=Repair Request: ${m}, Fault: ${f}`, '_blank');
+        window.open(`https://wa.me/ ${waNumber}?text=Repair Request: ${m}, Fault: ${f}`, '_blank');
     }
 
     window.onscroll = () => { 
